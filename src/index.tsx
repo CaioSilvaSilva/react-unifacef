@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 
 import * as Sentry from '@sentry/browser';
 import './index.css';
+import 'semantic-ui-css/semantic.min.css';
+
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'mobx-react';
 import { createBrowserHistory } from 'history';
