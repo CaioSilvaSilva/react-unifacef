@@ -8,7 +8,9 @@ import { configureScope, init } from '@sentry/browser';
     return;
   }
 
-  init({dsn: "https://c382da9c98444a388033153b127978fe@o403751.ingest.sentry.io/5266734"});
+  const { REACT_APP_SENTRY_DSN } = process.env;
+
+  init({dsn: REACT_APP_SENTRY_DSN});
 
   configureScope(scope => {
   })
