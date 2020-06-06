@@ -1,21 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-import * as Sentry from '@sentry/browser';
 import './index.css';
 import 'semantic-ui-css/semantic.min.css';
+import './plugins/sentry.plugin';
 
 import * as serviceWorker from './serviceWorker';
-import { Provider } from 'mobx-react';
-import { createBrowserHistory } from 'history';
-import { Router } from 'react-router-dom';
-import Routes from './routes';
-import { syncHistoryWithStore } from 'mobx-react-router';
-
-import { router } from './mobx';
 import * as store from './mobx';
 
-Sentry.init({dsn: "https://c382da9c98444a388033153b127978fe@o403751.ingest.sentry.io/5266734"});
+import { Provider } from 'mobx-react';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Router } from 'react-router-dom';
+import Routes from './routes';
+import { createBrowserHistory } from 'history';
+import { router } from './mobx';
+import { syncHistoryWithStore } from 'mobx-react-router';
 
 const rootElement = document.getElementById('root');
 const browserHistory = createBrowserHistory();
