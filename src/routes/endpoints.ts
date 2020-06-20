@@ -2,6 +2,7 @@ import Combustivel from '../containers/combustivel';
 import Home from '../containers/home';
 import { RouteProps } from 'react-router-dom';
 import Sobre from '../containers/sobre';
+import StarWars from '../containers/star-wars';
 
 const publicUrl = process.env.PUBLIC_URL;
 
@@ -14,4 +15,5 @@ export const endpoints: EndPointsProps[] = [
   { path: `${publicUrl}/home`, name: 'Home', component: Home, exact: true },
   { path: `${publicUrl}/sobre`, name: 'Sobre', component: Sobre, exact: true },
   { path: `${publicUrl}/combustivel`, name: 'Combustível', component: Combustivel, exact: true },
+  { path: `${publicUrl}/star-wars`, name: 'Star Wars', component: StarWars, exact: true },
 ];
