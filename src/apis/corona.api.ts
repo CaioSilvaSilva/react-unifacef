@@ -34,12 +34,12 @@ export const getSummary = () => {
   return axios.request<ISummary>({ baseURL, url: 'summary' })
 }
 
-export interface ICountry {
+export interface ICountryB {
   Country: string;
   Slug: string;
   ISO2: string;
 }
 
 export const getCountries = () => {
-  return axios.request<ICountry[]>({ baseURL, url: 'countries' })
+  return axios.request<ICountryB[]>({ baseURL, url: 'countries' })
 }
