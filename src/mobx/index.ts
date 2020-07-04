@@ -6,6 +6,7 @@ import { starWars } from '../containers/star-wars/store';
 import { starWarsDetails } from '../containers/star-wars-details/store';
 import { tags } from '../containers/tags/store';
 import { register } from '../containers/register/store';
+import { corona } from '../containers/corona/store';
 
 export {
   router,
@@ -16,4 +17,5 @@ export {
   cache,
   tags,
   register,
+  corona
 }
